@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+:root {
+    /* colors */
+    --clr-primary: #EF5350;
+    --clr-gray: #EAEAEA;
+    --clr-white: #FFFFFF;
+    --clr-black: #0D0D0D;
+    /* fonts */
+    --subtitle: 20px;
+    --body: 16px;
+    /* container-size */
+    --container-width: 1504px;
+    --container-space: 16px;
+    /* shadow */
+    --shadow: 1px 1px 10px #1c1a1926;;
+}
+
+
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--clr-black);
+    background-color: var(--clr-gray);
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-space) * 2);
+    width: 100%;
+    padding: 16px var(--container-space);
+    margin: 0 auto;
+}
+
+
+
+
+/* margin-and-padding */
+    /* margin */
+/* .m-left--64 {
+    margin-left: 64px;
+}
+.m-right--64 {
+    margin-right: 64px;
+} */
+
+
+
+
+/* flex */
+.flex {
+    display: flex;
+}
+.f-drct--column {
+    flex-direction: column;
+}
+.f-wrp--wrap {
+    flex-wrap: wrap;
+}
+.f-gr--1{
+    flex-grow: 1;
+}
+.j-cnt--between {
+    justify-content: space-between;
+}
+.j-cnt--center {
+    justify-content: center;
+}
+.a-itm--center {
+    align-items: center;
+}
+    /* gap */
+.gap64 {
+    gap: 64px;
+}
+.gap32 {
+    gap: 32px;
+}
+.gap16 {
+    gap: 16px;
+}
+
+
+
+
+/* fonts-styles */
+.subtitle {
+    font-size: var(--subtitle);
+}
+.body {
+    font-size: var(--body);
+}
+    /* font-weight */
+.f-w--400 {
+    font-weight: 400;
+}
+.f-w--700 {
+    font-weight: 700;
+}
+    /* font-colors */
+.clr-font--black {
+    color: var(--clr-black);
+}
+.clr-font--white {
+    color: var(--clr-white);
+}
+
+
+
+
+/* section-styles */
+.main-section {
+    /* min-height: 100vh; */
+}
+    /* header */
+.header {
+    padding: 16px 32px;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+}
+.logo-text {
+    width: 100%;
+    max-width: 171px;
+    margin: 0 64px 0 0;
+}
+.nav-link {
+    height: 100%;
+    padding: 16px 4px;
+    display: inline-block;
+}
+.nav-link:hover {
+    color: var(--clr-primary);
+    transition: all .3s ease;
+    border-bottom: var(--clr-primary) solid 4px;
+    border-radius: 2px;
+}
